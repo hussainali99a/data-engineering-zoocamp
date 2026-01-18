@@ -207,3 +207,62 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+
+# ==================================
+# Terraform
+# ==================================
+
+# Terraform working directory
+**/.terraform/*
+
+# Terraform state files (NEVER commit)
+*.tfstate
+*.tfstate.*
+*.backup
+
+# Terraform plan files
+*.tfplan
+*.tfplan.*
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Variable files (often contain secrets)
+*.tfvars
+*.tfvars.json
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform CLI config files
+.terraformrc
+terraform.rc
+
+# Terraform local provider cache (optional)
+.terraform.d/
+
+# ----------------------------------
+# Recommended to COMMIT (do NOT ignore)
+# ----------------------------------
+# .terraform.lock.hcl
+
+
+
+# ==================================
+# Credentials / Keys (NEVER commit)
+# ==================================
+keys/
+**/keys/
+*.pem
+*.key
+*.json
+*.p12
+*.crt
+*.der
+
